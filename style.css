@@ -1,0 +1,1156 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(103, 129, 224, 0.7),rgba(4,9,30,0.7)), url(images/homepage.jpeg);
+  background-position: center;
+  background-size:cover;
+  position: relative;
+ 
+}
+
+nav{
+  display: flex;
+  padding: 4% 8%;
+  justify-content: space-between;
+  align-items:center;
+ 
+}
+.nav-links{
+  flex: 3;
+  }
+.nav-links ul li{
+   list-style: none;
+   display:inline-block;
+   padding: 6px 8px;
+   position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+   
+    background:rgb(255, 255, 255);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+     width: 100%;
+    
+}
+.na-links ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+  padding-left: 900px;
+  
+ 
+}
+
+.na-links ul li{
+  list-style: none;
+  margin: 0 15px;
+}
+.na-links ul li .fab{
+  font-size: 30px;
+  line-height: 60px;
+  transition: .3s;
+  color: rgb(255, 255, 255);
+}
+
+.na-links ul li .fab:hover{
+  color: #fff;
+}
+.na-links ul li a{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+  text-align: center;
+  transition: .6s;
+  bottom: 300px;
+}
+ 
+
+.na-links ul li a:hover{
+  transform: translate(0, -20%);
+}
+
+.na-links ul li:nth-child(1) a:hover{
+  background-color: rgba(34, 76, 226, 0.829);
+}
+.na-links ul li:nth-child(2) a:hover{
+  background-color: #e424d7;
+}
+.na-links ul li:nth-child(3) a:hover{
+  background-color: #de1717;
+}
+
+.text{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding-top: 50px;
+   
+
+}
+.text h1{
+     
+      font-size: 130px;
+      line-height: 100px;
+      font-weight: 1000px;
+      font-family:Arial, Helvetica, sans-serif;
+       color: transparent;
+       -webkit-text-stroke: 1PX #fff;
+       background: url(images/back.png) ;
+       -webkit-background-clip: text;
+       background-position: 0 0;
+       animation: back 30s linear infinite;
+       filter: drop-shadow(8px 4px 4px rgb(32, 30, 30));
+     
+     
+ }
+ @keyframes back{
+       100%{
+          background-position: 2000px 0;
+       }
+ }
+ .text h2{
+    font-size: 80px;
+ }
+
+
+.text p{
+      margin:10px 0 40px;
+      font-size: 20px;
+}
+.book{
+      display:inline-block;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      border: 1px solid rgb(255, 255, 255);
+      padding: 12px 34px;
+      font-size: 13px;
+      background-color: black;
+      position: relative;
+      cursor: pointer;
+     
+
+}
+.book:hover{
+     border: 1px solid white;
+     background:white;
+     transition: 1s;
+     color: rgb(22, 16, 194);
+}
+.services{
+   width: 80%;
+   margin: auto;
+   text-align:center;
+   padding-top: 100px;
+  
+   
+   
+}
+.services1{
+  width: 80%;
+  margin: auto;
+  text-align:center;
+  padding-top: 40px;
+  padding-bottom: 200px;
+  position: relative;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.services-col{
+       flex-basis: 40%;
+       border-radius: 10px;
+       margin-bottom: 5%;
+       text-align: left;
+       box-sizing: border-box;
+       float: left;
+        width: 33.33%;   
+            
+}
+.services-col img{
+     width: 90%;
+     filter: drop-shadow(4px 4px 8px gray);
+     position: relative;
+    
+}
+.cta{
+    margin: 200px auto;
+    width: 60%;
+    background-image:linear-gradient(rgba(69, 67, 77, 0.7),rgba(4,9,30,0.7)), url(images/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    text-align: center;
+    padding: 200px;
+    padding-top: 100px;
+  
+   
+
+}
+.cont{
+  color: white;
+  font-size: 70px;
+
+}
+.come{
+  display:inline-block;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      border: 1px solid rgb(255, 255, 255);
+      padding: 12px 34px;
+      font-size: 13px;
+      background-color: black;
+      position: relative;
+      cursor: pointer;
+
+}
+
+.aboutus{
+   width: 100%;
+   text-align: center;
+   padding-bottom: 20px;
+}
+
+.aboutus h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+
+
+/*mobile*/
+@media screen and (max-width:736px) and (min-width:414px) {
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .text h1{
+    font-size:100px;
+  }
+  .text h2{
+    font-size: 50px;
+  }
+  .cont{
+    color: white; 
+  
+  }
+  .cont p{
+  
+      margin:5px 0 40px;
+      font-size: 20px;
+      text-align:center;
+      
+}
+.cta{
+  margin: 10px auto;
+  width: 40%;
+  background-image:linear-gradient(rgba(69, 67, 77, 0.7),rgba(4,9,30,0.7)), url(images/contact.jpg);
+  background-position:cover;
+  background-size:cover;
+  border-radius: 20px;
+  text-align:left;
+  padding: 120px;
+  padding-top: 100px;
+  
+}
+
+}
+@media screen and (max-width:1024px) and (min-width:768px) {
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .text h1{
+    font-size:120px;
+  }
+  .text h2{
+    font-size: 70px;
+  }
+  
+.aboutus{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+  
+
+}
+
+
+
+/*about page*/
+
+
+.sub-header{
+      height: 50vh;
+      width: 100%;
+      background-image: linear-gradient(rgba(103, 129, 224, 0.7),rgba(4,9,30,0.7)), url(images/hairstylist-client-taking-salon\ \(1\).jpg);
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+      color: #fff;
+}
+.about{
+  width: 100%;
+  margin: auto;
+  text-align:center;
+  padding-top: 100px;
+  padding-left: 100px;
+}
+@media screen and (max-width:739px) and (min-width:414px)
+{
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .about{
+    width: 150%;
+    margin: auto;
+    text-align:center;
+    float:left;
+    padding-top: 100px;
+    padding-left: 130px;
+  }
+  .aboutus p{
+    font-size: 10                                                           px;
+  }
+}
+
+@media screen and (max-width:1024px) and (min-width:768px)
+{
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .about{
+    width: 150%;
+    margin: auto;
+    text-align:center;
+    float:left;
+    padding-top: 100px;
+    padding-left: 220px;
+  }
+  .aboutus p{
+    font-size: 15px;
+  }
+}
+
+
+
+/*services page*/
+
+
+
+
+.sub-header1{
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(103, 129, 224, 0.7),rgba(4,9,30,0.7)), url(images/about.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+.hair{
+  width: 100%;
+  margin: auto;
+  text-align:center;
+  padding-top: 100px;
+}
+.hair-col{
+  flex-basis: 70%;
+  border-radius: 10px;
+  margin-bottom: 20%;
+  text-align: left;
+  box-sizing: border-box;
+  float: left;
+   width: 45.33%;   
+       
+}
+.hair-col img{
+width: 100%;
+height: 60%;
+filter: brightness(70%);
+
+filter: saturate(50%);
+
+}
+.hairdry{
+  text-align: center;
+  padding-right: 100px;
+  padding-top: 50px;
+}
+
+h1{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+
+.hair1{
+  width: 100%;
+  margin: auto;
+  text-align:center;
+}
+.hair-col1{
+  flex-basis: 100%;
+  border-radius: 10px;
+  margin-right: 10%;
+  text-align: right;
+  box-sizing: border-box;
+  float: left;
+   width: 44.33%;   
+       
+}
+.hair-col1 img{
+width: 100%;
+height: 60%;
+padding-top: 200px;
+padding-left: 200px;
+position: relative;
+filter: brightness(70%);
+
+filter: saturate(50%);
+}
+
+.hairdry1{
+  text-align:center;
+  padding-right: 700px;
+  position: relative;
+  bottom: 400px;
+  
+}
+h1{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.hair2{
+  width: 100%;
+  margin:0%;
+  text-align:center;
+  padding-top: 0px;
+  
+}
+.hair-col2{
+  flex-basis: 70%;
+  border-radius: 10px;
+  margin-bottom: 0%;
+  text-align: left;
+  box-sizing: border-box;
+  float: left;
+   width: 45.33%;   
+       
+}
+.hair-col2 img{
+width: 100%;
+height: 60%;
+bottom: 150px;
+position: relative;
+filter: brightness(70%);
+
+filter: saturate(50%);
+
+}
+
+.hairdry2{
+  text-align: center;
+  padding-right: 100px;
+  padding-top: 50px;
+  position: relative;
+  bottom: 0px;
+}
+h1{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+@media screen and (max-width:736px) and (min-width:414px)
+ {  
+  
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .hair{
+    width: 0%;
+    
+  }
+  
+  .hair-col img{
+       width: 0%;
+           
+  }
+  .hairdry{
+    text-align: center;
+    padding-right: 10px;
+    padding-top: 100px;
+    padding-bottom: 0px;
+  
+  }
+  .hairdry h1{
+    font-size: 20px;
+    color: blue;
+  }
+  .hairdry h3{
+    font-size: 15px;
+  }
+  .hair1{
+    width: 0%;
+    
+  }
+  
+  
+  .hair-col1 img{
+        width: 0%;    
+        
+   }
+  .hairdry1{
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+  
+  }
+  .hairdry1 h1{
+    font-size: 20px;
+    color: blue;
+  }
+  .hairdry1 h3{
+    font-size: 15px;
+  }
+
+
+  .hair2{
+    width: 0%;
+    
+  }
+  
+.hair-col2 img{
+  width: 0%;
+  
+}
+.hairdry2{
+  text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 0px;
+    padding-bottom: 1px;
+  
+}
+  .hairdry2 h1{
+    font-size: 20px;
+    color: blue;
+  }
+  .hairdry2 h3{
+    font-size: 15px;
+  }
+
+
+  
+}
+@media screen and (max-width:1024px) and (min-width:768px)
+{
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .hair1{
+    width: 100%;
+    margin: auto;
+    text-align:center;
+  }
+  .hair-col1{
+    flex-basis: 100%;
+    border-radius: 10px;
+    margin-right: 10%;
+    text-align: right;
+    box-sizing: border-box;
+    float: left;
+     width: 44.33%;   
+         
+  }
+  .hair-col1 img{
+  width: 100%;
+  height: 60%;
+  padding-top: 300px;
+  padding-left: 200px;
+  
+  }
+  .hairdry{
+    text-align: center;
+    padding-left: 500px;
+   
+    padding-top: 200px;
+  }
+  
+  .hairdry1{
+    text-align:center;
+    padding-right: 400px;
+    position: relative;
+    bottom: 400px;
+    
+  }
+  .hair-col2{
+    flex-basis: 70%;
+    border-radius: 10px;
+    margin-bottom: 0%;
+    text-align: left;
+    box-sizing: border-box;
+    float: left;
+     width: 45.33%;  
+     padding-top: 100px; 
+         
+  }
+  .hairdry2{
+    text-align: center;
+    padding-left: 500px;
+    padding-top: 200px;
+    position: relative;
+    bottom: 0px;
+  }
+  
+}
+
+/*booking page*/
+
+
+.sub-header3{
+  min-height: 200vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(103, 129, 224, 0.7),rgba(4,9,30,0.7)), url(images/blonde-woman-with-mobile-phone-getting-her-hair-done.jpg);
+  background-position: center;
+  background-size:cover;
+  position: relative;
+}
+
+div.element {
+ 
+  text-align: center;
+  width: 30% ;
+  margin-left: 35%;
+  color: white;
+  
+}
+
+input, select, textarea {
+  border-radius: 2px;
+  border: 2px solid rgb(125, 122, 221);
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  width: 100%;
+  margin-top: 7%;
+}
+
+textarea {
+  height: 100px;
+}
+
+
+hr {
+  border: 1px dotted rgb(0, 0, 0);
+}
+.element span{
+  position: relative;
+  font-size: 16px;
+  color: #de1717;
+}
+.element span h4{
+  position: relative;
+
+  font-size: 16px;
+  color: rgb(58, 195, 58);
+ 
+ }
+ 
+
+button {
+  
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      border: 1px solid rgb(255, 255, 255);
+      padding: 12px 34px;
+      font-size: 13px;
+      background-color: black;
+      margin-left: 45%;
+      margin-top: 3%;
+    
+      cursor: pointer; 
+      
+}
+
+
+button:hover {
+  border: 2px solid rgb(218, 173, 237);
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+ .parent {
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: left;
+}
+.child {
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  
+}
+
+ 
+@media screen and (max-width:736px) and (min-width:414px)
+{
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  div.element {
+    padding-top: 20px;
+    margin: 3px;
+    text-align: center;
+    width: 50% ;
+    margin-left: 25%;
+    color: white;
+    
+  }
+  div.element.inlined {
+    width: 50%;
+    display: inline-block;
+    margin-left: 25%;
+  
+   }
+   button {
+  
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 12px 34px;
+    font-size: 13px;
+    background-color: black;
+    margin-left: 30%;
+  
+    cursor: pointer; 
+    
+}
+
+}
+
+@media screen and (max-width:1024px) and (min-width:768px)
+{
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  div.element {
+    padding-top: 20px;
+    margin: 3px;
+    text-align: center;
+    width: 70% ;
+    margin-left: 15%;
+    color: white;
+    
+  }
+  div.element.inlined {
+    width: 70%;
+    display: inline-block;
+    margin-left: 15%;
+  
+   }
+   button {
+  
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 12px 34px;
+    font-size: 13px;
+    background-color: black;
+    margin-left: 40%;
+  
+    cursor: pointer; 
+    
+}
+
+}
+
+
+
+
+/*contactus*/
+
+
+.sub-header4{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(103, 129, 224, 0.7),rgba(4,9,30,0.7)), url(images/beautiful-model-with-long-smooth-flying-blonde-hair-isolated-dark-grey-studio-background-young-caucasian-model-with-well-kept-skin-hair-blowing-air.jpg);
+  background-position: center;
+  background-size:cover;
+  position: relative;
+}
+.text1{
+  width: 100%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  padding-top: 50px;
+
+}
+
+.text1 h1{
+     
+  font-size: 70px;
+  line-height: 100px;
+  
+ 
+}
+@keyframes back{
+   100%{
+      background-position: 2000px 0;
+   }
+}
+
+
+.text1 p{
+    margin:10px 0 40px;
+    font-size: 20px;
+
+ 
+}
+
+
+
+/*video*/
+.videos{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: brightness(80%);
+}
+.play{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+.play ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 40px;
+}
+.play ul li a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 17px;
+}
+.play ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background:rgb(255, 255, 255);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.play ul li:hover::after{
+   width: 100%;
+}
+
+
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+}
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+      width: 100%;
+      height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+  .back-video{
+    width: auto;
+    height: 100%;
+  }
+}
+@media screen and (max-width:736px) and (min-width:414px)
+{
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .videos{
+    width: 100%;
+    height: 60vh;
+    
+    position:static;
+    padding: 150 0%;
+  
+    display: flex;
+    align-items: center;
+    justify-content:left;
+  }
+  .back-video{
+    position: relative;
+    right: 200%;
+    left:0%;
+    bottom: 0;
+    z-index: -1;
+  
+  }
+  .play{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 8%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    padding-top: 70px;
+  }
+  .play ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+ }
+ 
+}
+@media screen and (max-width:1024px) and (min-width:768px)
+{
+  
+  .videos{
+    width: 100%;
+    height: 60vh;
+    
+    position:static;
+    padding: 220 0%;
+  
+    display: flex;
+    align-items: center;
+    justify-content:left;
+  }
+  .back-video{
+    position: relative;
+    right: 200%;
+    left:0%;
+    bottom: 0;
+    z-index: -1;
+  
+  }
+  .play{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 8%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    padding-top: 70px;
+  }
+  .play ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+ }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root{
+    --succes-color: #2ecc71;;
+    --error-color: #e74c3c;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    width: 400px;
+
+  background-color: #f9fafb;
+  font-family: 'Open Sans', sans-serif;
+  display:block;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh;
+  margin-left: 35%;
+  
+}
+
+h2{
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.form{
+    padding: 30px 40px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    color:#777;
+    display: block;
+    margin-bottom: 5px; 
+}
+ 
+.form-control input
+{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;   
+}
+
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+
+}
+
+.form-control.success input {
+    border-color: var(--succes-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);    
+}
+
+.form-control small{
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+.form button {
+    cursor: pointer;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    margin-top:20px;
+    margin-left: 35%;
+    width:50%;
+}
+
+
+
+
+
+
+
+
+
+
+

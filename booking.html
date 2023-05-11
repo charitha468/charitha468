@@ -1,0 +1,157 @@
+<html>
+<head>
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <title>salon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200;1,300&display=swap" rel="stylesheet">
+    <title>Social Media Icons</title>
+    <link rel="stylesheet" href="./social-media-icons.css">
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+
+
+
+
+</head>
+<body>
+   <section class="sub-header3">
+    <nav>
+      <div class="nav-links">
+          <ul>
+            <li><a href="website.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="page.html">CONTACT</a></li>
+          </ul>
+     </div>
+     
+    </nav>
+
+
+    <form action="name.php" method="post">
+      <div class="element">
+        <label for="First Name"> </label>
+        <input type="text" id="first-name" onkeyup="validateFirst()" name="customer_firstname" placeholder="first-name:">
+        <span id="firstname-error"></span>
+      </div>
+      <div class="element">
+        <label for="last Name"> </label>
+        <input type="text" id="last-name" onkeyup="validateLast()" name="customer_firstname" placeholder="last-name:">
+        <span id="lastname-error"></span>
+      </div>
+      <div class="element">
+        <label for="email"> </label>
+        <input type="text" id="contact-email" onkeyup="validateEmail()" name="customer_email" placeholder="email:" >
+        <span id="email-error"></span>
+      </div>
+      
+      <div class="element">
+        <label for="phonenumber"> </label>
+        <input type="telphone" id="contact-phone" onkeyup="validatePhone()" name="customer_phone" placeholder="phone:123-123-1234" >
+        <span id="phone-error"></span>
+      </div>
+      <div class="element">
+        <label for="password"> </label>
+        <input type="text" id="contact-password" onkeyup="validatePassword()" name="customer_email" placeholder="password" >
+        <span id="password-error"></span>
+      </div>
+      
+      <div class="element">
+        <label for="Address"></label>
+        <input type="text" id="contact-address" onkeyup="validateAddress()" name="customer_address" placeholder="Street Name, apt# City, State Area Code (zip code) ">
+        <span id="address-error"></span>
+      </div>
+    
+      <div class="element">
+        <label for="checkin"> </label>
+        <input type="text" id="checkinservice" onkeyup="validateDate()" name="date" placeholder="date:mm-dd-yyyy">
+        <span id="date-error"></span>
+      </div>
+      
+      <div  class="element" ><div class="parent">
+        <div class="child">
+        <input  type='radio' name='salon2' value='x' id ="x" onClick="javascript:return yourfunction(2)">haircut
+        </div>
+        <div class="child">
+        <input  type='radio' name='salon2' value='y' id="y" onClick="javascript:return yourfunction(3)">makeup
+        </div>
+        <div class="child">
+        <input  type='radio' name='salon2' value='z' id="z" onClick="javascript:return yourfunction(1)">skincare
+        </div>
+      </div>
+      </div>
+      <br/>
+      <div id = "hair" style="display: none;text-align: center;
+      width: 30% ;
+      margin-left: 35%;
+      color: white;
+      ">
+          haircut
+           <select name="salon">
+            <option name="salon1" value="m1">colouring</option>
+               <option name="salon1" value="m2">layers</option>
+               <option name="salon1" value="m3">blowdry</option>
+           </select>
+       </div>
+       <div id = "makeup"  style="display: none; text-align: center;
+       width: 30% ;
+       margin-left: 35%;
+       color: white;
+       ">
+       makeup
+         <select name="salon">
+          <option name="salon1" value="m1">bridal</option>
+               <option name="salon1" value="m2">casual</option>
+               <option name="salon1" value="m3">party</option>
+           
+            
+         </select>
+         </div>
+
+        <div id = "skincare"  style="display: none;text-align: center;
+        width: 30% ;
+        margin-left: 35%;
+        color: white;
+        ">
+          skincare
+           <select name="salon">
+            <option name="salon1" value="m1">facial</option>
+            <option name="salon1" value="m2">eyebrows</option>
+            <option name="salon1" value="m3">treatment</option>
+           
+           </select>
+          </div>
+     
+        <span id="service-error"></span>
+      </div>
+      <div class="element">
+        <label>Your Message</label>
+        <textarea rows="3" id="contact-message" onkeyup="validateMessage()" placeholder="Enter Your Message here"></textarea>
+        <span id="message-error"></span>
+
+      </div>
+     
+      <button type="book" onclick="return validateForm()">Book The Service</button><br>
+      <div class="element">
+      <span id="submit-error"></span>
+      </div>
+     
+    </form>
+      
+    </section>
+    <script src="script.js" type="text/javascript"></script>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
